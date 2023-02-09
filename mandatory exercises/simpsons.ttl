@@ -1,0 +1,20 @@
+# IN3060/IN4060 - Mandatory Exercise number 1.
+
+# --- 1 Exercise ---
+# Define the standard rdf and xsd namespaces, and the foaf, fam and sim namespaces as
+# specified above in your RDF file.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+@prefix fam: <http://www.ifi.uio.no/IN3060/family#>
+@prefix sim: <http://www.ifi.uio.no/IN3060/simpsons#>
+
+# --- 2 Exercise ---
+# Add Homer, Marge, Lisa, Bart and Maggie as instances of foaf:Person to your
+# RDF file. Add also their full name, e.g. "Homer Simpson", using the foaf:name
+# property and their age using the foaf:age property. Take values from the
+# table below. Specify the age values to be of the datatype xsd:int.
+
+sim:Simpsons rdf:type fam:Family;
+    fam:hasFamilyMember sim:Homer, sim:Marge, sim:Lisa, sim:Bart, sim:Maggie .
